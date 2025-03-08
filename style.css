@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.public-sans-regular {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    /* primary colors */
+    --darkPink: #ba4270;
+    --linkWater: #fbfcf2;
+
+    /* Secondary colors */
+    --Blue: #36536b;
+    --lightBlue: #6c8294;
+    --mirageBlue: #1b262f;
+    --PinkActive: #da6d97;
+}
+
+/* h1-dm serif display regular 72px,
+h2-dm serif display regular 48px, 56px,
+h3-dm serif display regular 36px, 40px,
+h4-dm serif display regular 24px, 28px,
+h5-dm serif display regular 20px, 24px,
+*/
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: var(--mirageBlue);
+    background-color: var(--linkWater);
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root, #__next {
+    isolation: isolate;
+}
